@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <title>
+            My First Website
+        </title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+
+        <style>
+            .row{
+             width:720px;
+             margin: 10px auto 10px auto;   
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding: 20px;
+            }
+        
+        </style>
+    </head>
+
+    <body style="background-color: tan"></body>
+    
+        <h1 style="font-family: Georgia, 'Times New Roman', Times, serif;" style="text-align: center;">
+            Digital Media Studio 1: Assesment 2
+
+        </h1>
+        <h2>
+            S3900238
+        </h2>
+        <p>
+            My Website
+        </p>
+
+
+
+                 <div class="row">
+     
+
+                <div class="image-container"><img id="1" src="img/Greenvale.png"  onmouseover= "this.src='img/greenvale.light.png';" 
+                    onmouseout= "this.src='img/greenvale.png';"width="300" height="200"/></div>
+               
+                <div class="image-container"><img id="2" src="img/airportwest.png"  onmouseover= "this.src='img/airportwest.dark.png';" 
+                onmouseout= "this.src='img/airportwest.png';" width="300" height="200"/></div> 
+                
+                
+                </div>
+             
+                <div class="row">
+             
+                <div class="image-container"><img id="3" src="img/grandison1.png"  onmouseover= "this.src='img/grandison1.light.png';" 
+                    onmouseout= "this.src='img/grandison1.png';" width="300" height="200"/></div>
+                <div class="image-container"><img id="4" src="img/Moonee.png"  onmouseover= "this.src='img/Moonee.light.png';" 
+                    onmouseout= "this.src='img/moonee.png';"width="300" height="200"/></div>
+             
+                </div>
+                
+                <div class="row">
+             
+                 <div class="image-container"><img id="5" src="img/grandison2.png"  onmouseover= "this.src='img/grandison2.light.png';" 
+                    onmouseout= "this.src='img/grandison2.png';" width="300" height="200"/></div>
+
+                 <div class="image-container"><img id="6" src="img/learmonth.png"  onmouseover= "this.src='img/learmonth.light.png';" 
+                    onmouseout= "this.src='img/learmonth.png';"width="300" height="200"/></div>
+             
+                </div>
+             
+                 <div class="row">
+             
+                 <div class="image-container"><img id="7" src="img/Bower.png"  onmouseover= "this.src='img/bower.light.png';" 
+                    onmouseout= "this.src='img/bower.png';"width="300" height="200"/></div>
+                
+                 <div class="image-container"><img id="8" src="img/barry.png"  onmouseover= "this.src='img/barry.light.png';" 
+                    onmouseout= "this.src='img/barry.png';"width="300" height="300"/></div>
+                 </div>
+             
+             <div class="image-container"><img id="9" src="img/midcentury.png"  onmouseover= "this.src='img/midcentury.light.png';" 
+                onmouseout= "this.src='img/midcentury.png';"width="300" height="200"/>
+             </div>
+
+        <script>
+            var sound1 = new buzz.sound("sound/1.mp3");
+            var sound2 = new buzz.sound("sound/2.wav");
+            var sound3 = new buzz.sound("sound/3.wav");
+            var sound4 = new buzz.sound("sound/4.m4a");
+            var sound5 = new buzz.sound("sound/5.mp3");
+            var sound6 = new buzz.sound("sound/6.wav");
+            var sound7 = new buzz.sound("sound/7.flac");
+            var sound8 = new buzz.sound("sound/8.wav");
+            var sound9 = new buzz.sound("sound/9.wav");
+
+            window.onload = function() {
+                document.getElementById('1').addEventListener('click', function() {sound1.play();});
+                document.getElementById('2').addEventListener('click', function() {sound2.play();});
+                document.getElementById('3').addEventListener('click', function() {sound3.play();});
+                document.getElementById('4').addEventListener('click', function() {sound4.play();});
+                document.getElementById('5').addEventListener('click', function() {sound5.play();});
+                document.getElementById('6').addEventListener('click', function() {sound6.play();});
+                document.getElementById('7').addEventListener('click', function() {sound7.play();});
+                document.getElementById('8').addEventListener('click', function() {sound8.play();});
+                document.getElementById('9').addEventListener('click', function() {sound9.play();});
+            }
+        </script>     
+    </body>
+  
+
+
+</div>
+
+</html>
